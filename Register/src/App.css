@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+background: linear-gradient(
+    135deg, 
+    #f157e9 50%,  
+    #4b56ee 70% 
+  );
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+h1{
+  color: white;
+  font-weight: 1000;
+  font-size: 50px;
+  border:solid 4px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: #555 2px 2px 8px;
+}
+
+.form-wrapper {
+  width: 90%;
+  max-width: 550px; 
+  background: rgb(205, 207, 212);
+  padding: 30px 40px;
+  border: inset 2px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+/* Form Structure and Inputs */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.registration-form input,
+.registration-form textarea,
+.registration-form select {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #f9f9f9;
+}
+
+.registration-form input:focus,
+.registration-form textarea:focus,
+.registration-form select:focus {
+  border-color: #3655c5;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+/* Validation Styling */
+.input-error {
+  border-color: #e42b16 !important; /* Highlight invalid fields with red borders */
+  background-color: #fffafa;
+}
+
+.error-message {
+  color: #ea2b16; /* Clear, small red text for error messages */
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+/* Radio Group Styling */
+.radio-group {
+  display: flex;
+  gap: 25px;
+  padding: 5px 0;
+}
+
+.radio-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #4137d1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #4cae4c; 
+  transform: translateY(-2px); /* Hover animation */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:disabled {
+  border:outset 2px;
+  background-color: #d42fa2;
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+}
+
+/* Success Message Styling */
+.success-message-box {
+  text-align: center;
+  padding: 40px;
+  border: 2px solid #5cb85c;
+  border-radius: 12px;
+  background-color: #e8f5e9;
+}
+
+.success-title {
+  color: #2e7d32;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.success-detail {
+  font-size: 16px;
+  color: #555;
+}
