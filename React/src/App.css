@@ -1,0 +1,88 @@
+body {
+  background: #f2f4f8;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-title {
+  background: #4a90e2;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.registration-form {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.error-border {
+  border-color: red !important;
+}
+
+.submit-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #357abd;
+}
+
+.success-msg {
+  color: green;
+  background: #dff0d8;
+  padding: 15px 25px;
+  border-radius: 8px;
+}
